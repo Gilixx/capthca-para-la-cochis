@@ -29,14 +29,14 @@ checkBtn.addEventListener("click", e =>{
   let inputVal = inputField.value.split('').join(' ');
   if(inputVal == captcha.innerText){ //if captcha matched
     statusTxt.style.color = "#4db2ec";
-    statusTxt.innerText = "Nice! You don't appear to be a robot.";
+    statusTxt.innerText = "!Nice baby! Otro o miedo?";
     setTimeout(()=>{ //calling removeContent & getCaptcha after 2 seconds
       removeContent();
       getCaptcha();
     }, 2000);
   }else{
     statusTxt.style.color = "#ff0000";
-    statusTxt.innerText = "Captcha not matched. Please try again!";
+    statusTxt.innerText = "NTP, intenta de nuevo amor";
   }
 });
 
